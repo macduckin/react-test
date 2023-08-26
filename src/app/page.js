@@ -1,9 +1,8 @@
-import styles from './page.module.css'
-import Name from '../components/name'
+import Login from '@/components/login/page'
 export default function Home() {
   return (
     <main>
-      <Name />
+      <Login />
     </main>
   )
 }
