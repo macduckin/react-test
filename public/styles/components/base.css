@@ -11,6 +11,6 @@ body, div, input, a, li, ul, textarea, span, p, h1, h2, h3, ol, aside, main{
     display: block;
     margin: 0 auto;
 }
-p{
+p, h1, h2, h3{
     font-family: Arial, Helvetica, sans-serif;
 }

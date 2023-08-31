@@ -23,4 +23,10 @@
 }
 .icons a{
     margin-left: 15px;
+    cursor: pointer;
+
+}
+.logolink{
+    text-decoration: none;
+    color: #000;
 }

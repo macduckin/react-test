@@ -1,6 +1,9 @@
 'use client'
 import { FaFacebookF } from '@react-icons/all-files/fa/FaFacebookF';
 import { useState } from 'react';
+import logo from '../../../public/images/logo.svg'
+import Image from 'next/image';
+import Link from 'next/link';
 export default function Login() {
     const [page, setPage] = useState(1)
 
@@ -9,7 +12,7 @@ export default function Login() {
             {page === 1 && <div className='signup'>
                 <div className="card primary">
                     <div className="intro">
-                        <h1 className="insta">instagram</h1>
+                        <a className="insta"><Image src={logo} /></a>
                         <p>Sign up to see photos and <br />
                             videos from your friends</p>
                         <button className="facebook"><FaFacebookF color='fff' fontSize={15} /> Login in with Facebook</button>
@@ -26,8 +29,8 @@ export default function Login() {
                     <div className="footer">
                         <p>People who user our device may have uploaded <br />
                             your contact information to Instagram <a className='blue' href="">Learn more</a></p>
-                        <p>by signing up, you agree to our <a onClick={() => setPage(2)}>Terms, Privacy <br /> Policy and Cookies Policy</a></p>
-                        <button className="btn signup">Sign up</button>
+                        <p>by signing up, you agree to our <span onClick={() => setPage(2)}>Terms, Privacy <br /> Policy and Cookies Policy</span></p>
+                        <Link className="btn signup" href="/profile">Sign up</Link>
                     </div>
                 </div>
                 <div className="card secondary">
@@ -38,8 +41,9 @@ export default function Login() {
             {page === 2 && <div className='signin'>
                 <div className="card login">
                     <div className="intro">
-                        <h1 className="insta">instagram</h1>
-
+                        <div className='insta'>
+                            <Image src={logo} />
+                        </div>
                         <div className="inputs">
                             <input type="text" className="E-mail" placeholder="Phone number, username or E-mail" />
                             <input type="password" className="password" placeholder="password" />

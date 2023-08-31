@@ -31,7 +31,6 @@
 .profile-inner{
     display: flex;
     justify-content: center;
-    margin-right: 170px;
     margin-top: 20px;
 }
 .flex{
@@ -43,4 +42,7 @@
 .full_name{
     font-weight: 700;
     font-size: 17px;
+}
+.profile{
+    margin: 0 auto;
 }

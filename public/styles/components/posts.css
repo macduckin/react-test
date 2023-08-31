@@ -1,6 +1,5 @@
 .minihead hr{
     width: 100%;
-    position: relative;
 }
 .minihead p{
     font-size: 12px;
@@ -9,6 +8,31 @@
     text-transform: uppercase;
     text-align: center;
     margin-right: 50%;
+}
+.minihead{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+
+}
+.hr-p{
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    flex-direction: column;
+    margin-left: 11%;
+    position: relative;
+
+}
+.hr-p hr:nth-child(2){
+    position: absolute;
+    border-color: #e7e7e7;
+    width: 10%;
+    top: 0;
+    margin-left: 140px;
+}
+.hr-p hr:first-child{
+    border-color: #000;
 }
 .post img{
     width: 100%;
@@ -22,6 +46,8 @@
     justify-content: space-between;
     max-width: 800px;
     flex-wrap: wrap;
+    margin-left: 80px;
+    
 
 }
 .posts-inner{
@@ -29,3 +55,4 @@
     justify-content: center;
     margin: 150px 0;
 }
+

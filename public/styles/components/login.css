@@ -7,11 +7,10 @@
     margin-left: 35%;
     text-align: center;
 }
- .insta{
-    font-family: 'Dancing Script', cursive; 
-    font-weight: 700;
-    font-style: italic;
-    font-size: 40px;
+
+.intro{
+    margin: 40px;
+
 }
 .intro p{
     font-size: 15px;
@@ -39,25 +38,39 @@ hr{
     cursor: pointer;
 
 }
+.inputs{
+    margin: 40px 0;
+}
 .inputs input{
     margin: 4px 0;
     padding: 10px 70px 10px 10px;
-    background-color: #fafafa;
+    background-color: hsl(0, 0%, 98%);
     outline: none;
     border: none;
+}
+.inputs input:nth-child(2){
+    font-size: 13px;
+    font-weight: 100;
 }
 .footer p {
     font-size: 13px;
     color: #9e9e9e;
     font-weight: 400;
+    margin: 25px 0;
 
 }
 .footer a{
     text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+
+}
+.footer span{
+    text-decoration: none;
     color: #0095f6;
     font-weight: 700;
     cursor: pointer;
-
+    margin: 10px 0;
 }
 .btn{  
     outline: none;
@@ -70,9 +83,10 @@ hr{
     width: 80%;
     cursor: pointer;
     border-radius: 5px;
+    margin: 15px 0;
 }
 .primary{
-    height: 95vh;
+    height: 115vh;
 }
 .secondary{
     padding: 30px;
