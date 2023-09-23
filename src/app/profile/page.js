@@ -1,6 +1,5 @@
 import Header from '../../components/header/header'
 import Image from 'next/image'
-import ModalWindow from '../../components/modalWindow/page'
 import avatar from '../../../public/images/avatar.jpg'
 import Posts from '../../components/posts/index'
 export default function Profile() {
@@ -60,7 +59,6 @@ export default function Profile() {
                 </div>
             </div>
             <Posts posts={posts} />
-            <ModalWindow />
         </main>
     )
 }
